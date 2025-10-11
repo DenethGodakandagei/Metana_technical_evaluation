@@ -1,0 +1,36 @@
+"use client";
+import { Home, Folder, Layers, Upload, MoreHorizontal } from "lucide-react";
+
+export default function Sidebar() {
+  const navItems = [
+    { icon: Home, label: "Home" },
+    { icon: Folder, label: "Projects" },
+    { icon: Layers, label: "Templates" },
+    { icon: Upload, label: "Uploads" },
+    { icon: MoreHorizontal, label: "More" },
+  ];
+
+  return (
+    <aside className="w-20 h-screen border-r flex flex-col items-center py-6 bg-white">
+      <div className="text-indigo-600 font-bold text-xl mb-8">🟦</div>
+      <nav className="flex flex-col items-center gap-6">
+        {navItems.map(({ icon: Icon, label }) => (
+          <button
+            key={label}
+            className="flex flex-col items-center text-gray-600 hover:text-indigo-600 transition"
+          >
+            <Icon size={22} />
+            <span className="text-[10px] mt-1">{label}</span>
+          </button>
+        ))}
+      </nav>
+      <div className="mt-auto mb-4">
+        <img
+          src="/avatar.png"
+          alt="User"
+          className="w-10 h-10 rounded-full border"
+        />
+      </div>
+    </aside>
+  );
+}

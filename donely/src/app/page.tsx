@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import WelcomeScreen from "../components/WelcomeScreen";
+import WelcomeScreen from "./components/WelcomeScreen";
 import Image from "next/image"; 
 
 
