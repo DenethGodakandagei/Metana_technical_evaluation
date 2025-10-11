@@ -1,29 +1,28 @@
-import HeroSection from "./HeroSection";
 import TemplateCard from "./TemplateCard";
-import RecentItem from "./RecentItem";
+import { ArrowRight, Clock } from "lucide-react";
+import { Star } from "lucide-react";
+import Banner from "./Banner";
+import RecentCard from "../components/RecentCarsd";
+
 
 export default function DashboardPage() {
   const templates = [
-    { title: "Web Pages", description: "Good products deserve good websites.", image: "/template1.jpg" },
-    { title: "Presentations", description: "Easily edit our animated templates.", image: "/template2.jpg" },
-    { title: "Social Media", description: "Everything you need for socials.", image: "/template3.jpg" },
-    { title: "Sales Pitch", description: "Turn your dreams into reality.", image: "/template4.jpg" },
+    { title: "Web Pages", description: "Good products deserve good websites.", image: "/assets/templates/template1.png" },
+    { title: "Presentations", description: "Easily edit our animated templates.", image: "/assets/templates/template2.png" },
+    { title: "Social Media", description: "Everything you need for socials.", image: "/assets/templates/template3.png" },
+    { title: "Sales Pitch", description: "Turn your dreams into reality.", image: "/assets/templates/template4.png" },
   ];
 
-  const recents = [
-    { title: "Document", author: "Mark", date: "May 14, 2025", image: "/recent1.jpg" },
-    { title: "Web Pages", author: "Mark", date: "May 14, 2025", image: "/recent2.jpg" },
-    { title: "60 Second Cut", author: "Caroline", date: "May 14, 2025", image: "/recent3.jpg" },
-  ];
+  
 
   return (
-    <main className="flex-1 p-8 bg-gray-50 overflow-y-auto">
-      <HeroSection />
+    <main className="flex-1 p-8 bg-white dark:bg-[#1D1D1D] overflow-y-auto">
+      <Banner />
 
       <section className="mb-8">
         <div className="flex justify-between items-center mb-4">
-          <h3 className="text-lg font-semibold text-gray-800">For you</h3>
-          <button className="text-sm text-indigo-600 hover:underline">View all templates →</button>
+          <h3 className="text-md flex  font-medium text-gray-600"><Star className="w-4 h-4 text-gray-600 m-1" /><span className="">For you</span></h3>
+          <span className="text-sm text-gray-500 flex justify-between">View all templates    <ArrowRight className="w-4 h-4" /></span>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {templates.map((t) => (
@@ -31,18 +30,7 @@ export default function DashboardPage() {
           ))}
         </div>
       </section>
-
-      <section>
-        <div className="flex justify-between items-center mb-4">
-          <h3 className="text-lg font-semibold text-gray-800">Recents</h3>
-          <button className="text-sm text-indigo-600 hover:underline">See in projects →</button>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {recents.map((r) => (
-            <RecentItem key={r.title} {...r} />
-          ))}
-        </div>
-      </section>
+      <RecentCard />
     </main>
   );
 }

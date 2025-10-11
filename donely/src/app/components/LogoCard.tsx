@@ -1,49 +1,34 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import Image from "next/image";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export default function LogoCard() {
-  const cardRef = useRef<HTMLDivElement>(null);
-  const logoRef = useRef<HTMLDivElement>(null);
+  const { theme, systemTheme } = useTheme();
+  const [currentTheme, setCurrentTheme] = useState<string | undefined>("light");
 
+  // Handle hydration safely (avoid mismatch)
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      // Fade and float effect for background
-      gsap.fromTo(
-        cardRef.current,
-        { opacity: 0, x: 50 },
-        { opacity: 1, x: 0, duration: 1.2, ease: "power3.out" }
-      );
+    const activeTheme = theme === "system" ? systemTheme : theme;
+    setCurrentTheme(activeTheme);
+  }, [theme, systemTheme]);
 
-      // Subtle floating animation for the logo
-      gsap.to(logoRef.current, {
-        y: -10,
-        repeat: -1,
-        yoyo: true,
-        ease: "power1.inOut",
-        duration: 3,
-      });
-    });
-
-    return () => ctx.revert();
-  }, []);
+  const videoSrc =
+    currentTheme === "dark"
+      ? "/assets/dark-video.mp4"
+      : "/assets/light-video.mp4";
 
   return (
-    <div
-  ref={cardRef}
-  className="relative w-1/2 h-full flex items-center justify-center bg-cover bg-center"
-  style={{ backgroundImage: "url('/assets/lightbg.png')" }} 
->
-  <Image
-    src="/lightUi.png"
-    alt="Sonola Logo"
-    width={340}
-    height={600}
-    className="opacity-90"
-  />
-</div>
-
+    <div className="relative w-full lg:w-1/2 flex items-center justify-center bg-blue-300 overflow-hidden  shadow-lg">
+      <video
+        key={videoSrc} 
+        src={videoSrc}
+        className="w-full h-full object-cover opacity-90 transition-opacity duration-500"
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
+    </div>
   );
 }

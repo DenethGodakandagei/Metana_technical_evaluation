@@ -11,25 +11,28 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className="w-20 h-screen border-r flex flex-col items-center py-6 bg-white">
-      <div className="text-indigo-600 font-bold text-xl mb-8">🟦</div>
+    <aside className="w-20 h-screen border-r flex flex-col items-center py-12 bg-white dark:bg-[#0D0D0D]">
       <nav className="flex flex-col items-center gap-6">
         {navItems.map(({ icon: Icon, label }) => (
           <button
             key={label}
-            className="flex flex-col items-center text-gray-600 hover:text-indigo-600 transition"
+            className="flex flex-col items-center  text-gray-600  transition"
           >
-            <Icon size={22} />
-            <span className="text-[10px] mt-1">{label}</span>
+            <Icon className="hover:bg-blue-500 m-1  p-1 rounded-xl dark:text-white hover:[box-shadow:inset_0_0_8px_white] hover:text-white"  size={28} />
+            <span className="text-[10px] dark:text-white mt-1">{label}</span>
           </button>
         ))}
       </nav>
       <div className="mt-auto mb-4">
         <img
-          src="/avatar.png"
-          alt="User"
-          className="w-10 h-10 rounded-full border"
-        />
+  src={`https://api.dicebear.com/9.x/avataaars/svg?seed=${Math.floor(
+    Math.random() * 1000
+  )}`}
+  alt="User"
+  className="w-10 h-10 rounded-full border"
+/>
+
+
       </div>
     </aside>
   );

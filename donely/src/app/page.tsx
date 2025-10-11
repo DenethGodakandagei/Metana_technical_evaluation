@@ -1,28 +1,14 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
 import WelcomeScreen from "./components/WelcomeScreen";
 import Image from "next/image"; 
 
 
 export default function HomePage() {
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        ".fade-in",
-        { opacity: 0, y: 30 },
-        { opacity: 1, y: 0, duration: 1, stagger: 0.2, ease: "power3.out" }
-      );
-    }, containerRef);
-    return () => ctx.revert();
-  }, []);
-
+ 
   return (
-    <div className="w-full h-screen bg-gray-100  ">
-    <div ref={containerRef} className="h-[95%] flex content-center items-center justify-center">
+    <div className="w-full h-screen bg-[#f9f9f9] dark:bg-[#424242] ">
+    <div className="h-[95%] flex content-center items-center justify-center">
      
       <WelcomeScreen />
     

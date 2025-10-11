@@ -18,6 +18,12 @@
     --foreground: #ededed;
   }
 }
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
 
 body {
   background: var(--background);
