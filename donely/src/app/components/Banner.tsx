@@ -35,9 +35,9 @@ export default function Banner() {
               alt="Analytics Chart"
               width={250}
               height={100}
-              className="rounded-xl object-cover"
-              unoptimized
+              className="rounded-xl object-cover w-auto h-auto"
             />
+
           </div>
         </div>
 
