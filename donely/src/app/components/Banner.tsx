@@ -31,7 +31,7 @@ export default function Banner() {
         <div className="flex flex-col gap-3 rounded-2xl shadow-md">
           <div className="mt-2">
             <Image
-              src="/assets/banner/increaseRetention.webp"
+              src="/assets/banner/increase.webp"
               alt="Analytics Chart"
               width={250}
               height={100}
@@ -43,7 +43,7 @@ export default function Banner() {
         <div className="flex flex-col gap-3">
           <div className="relative rounded-2xl -top-20 overflow-hidden shadow-md w-74 h-64">
             <video
-              src="assets/banner/Emma_video.mp4"
+              src="/assets/banner/Emma_video.mp4"
               autoPlay
               muted
               loop
@@ -112,7 +112,7 @@ export default function Banner() {
       </div>
 
       {/* White faded bottom layer */}
-      <div className="absolute -bottom-8 left-0 w-full h-46 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+      <div className="absolute -bottom-8 left-0 w-full h-76 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
     </section>
   );
 }
