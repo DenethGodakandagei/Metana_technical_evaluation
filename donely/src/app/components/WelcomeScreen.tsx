@@ -42,7 +42,7 @@ export default function WelcomeScreen() {
             </div>
 
             <Link href="/dashboard" className="w-full sm:w-auto flex justify-center h-16 mx-3">
-              <button className="w-40 sm:w-48 bg-blue-500 dark:bg-blue-700 text-white px-6 py-3 rounded-2xl shadow-md hover:bg-blue-500 dark:hover:bg-blue-800 transition-colors [box-shadow:inset_0_0_8px_white] dark:[box-shadow:inset_0_0_2px_white] cursor-pointer">
+              <button className="w-40 sm:w-48 bg-blue-500 dark:bg-blue-700 text-white px-6 py-3 rounded-2xl shadow-md hover:bg-blue-500 dark:hover:bg-blue-800 transition-colors [box-shadow:inset_0_0_8px_white] dark:[box-shadow:inset_0_0_4px_white] cursor-pointer">
                 Next
               </button>
             </Link>
