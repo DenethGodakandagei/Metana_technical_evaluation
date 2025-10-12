@@ -11,7 +11,7 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className="w-20 h-screen border-r flex flex-col items-center py-12 bg-white dark:bg-[#0D0D0D]">
+    <aside className="w-20 h-screen  flex flex-col items-center py-12 bg-gray-50 dark:bg-[#0D0D0D]">
       <nav className="flex flex-col items-center gap-6">
         {navItems.map(({ icon: Icon, label }) => (
           <button
