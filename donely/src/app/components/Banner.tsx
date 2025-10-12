@@ -36,6 +36,7 @@ export default function Banner() {
               width={250}
               height={100}
               className="rounded-xl object-cover"
+              unoptimized
             />
           </div>
         </div>
