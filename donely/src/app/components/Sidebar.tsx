@@ -18,20 +18,17 @@ export default function Sidebar() {
             key={label}
             className="flex flex-col items-center  text-gray-600  transition"
           >
-            <Icon className="hover:bg-blue-500 m-1  p-1 rounded-xl dark:text-white hover:[box-shadow:inset_0_0_8px_white] hover:text-white"  size={28} />
+            <Icon className="hover:bg-blue-700 w-12 m-1  p-1 rounded-xl dark:text-white hover:[box-shadow:inset_0_0_3px_white] hover:text-white" size={28} />
             <span className="text-[10px] dark:text-white mt-1">{label}</span>
           </button>
         ))}
       </nav>
       <div className="mt-auto mb-4">
         <img
-  src={`https://api.dicebear.com/9.x/avataaars/svg?seed=345`}
-  alt="User"
-  className="w-10 h-10 rounded-full border"
-/>
-
-
-
+          src={`https://api.dicebear.com/9.x/avataaars/svg?seed=345`}
+          alt="User"
+          className="w-10 h-10 rounded-full border"
+        />
       </div>
     </aside>
   );

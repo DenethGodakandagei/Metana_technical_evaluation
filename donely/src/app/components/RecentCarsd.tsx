@@ -135,7 +135,7 @@ const RecentsSection: React.FC = () => {
         <h3 className="text-md flex items-center font-medium text-gray-700 dark:text-gray-200">
           <Clock className="w-4 h-4 mr-2" /> Recents
         </h3>
-        <button className="text-sm flex items-center text-gray-500 dark:text-gray-300 hover:text-gray-700 transition">
+        <button className="text-sm flex items-center text-gray-500 dark:text-gray-300 cursor-pointer transition">
           See all projects <ArrowRight className="w-4 h-4 ml-1" />
         </button>
       </div>
