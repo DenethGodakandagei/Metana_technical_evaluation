@@ -4,16 +4,13 @@ import { Star } from "lucide-react";
 import Banner from "./Banner";
 import RecentCard from "../components/RecentCarsd";
 
-
 export default function DashboardPage() {
   const templates = [
-    { title: "Web Pages", description: "Good products deserve good websites.", image: "/assets/templates/template1.png" },
-    { title: "Presentations", description: "Easily edit our animated templates.", image: "/assets/templates/template2.png" },
-    { title: "Social Media", description: "Everything you need for socials.", image: "/assets/templates/template3.png" },
-    { title: "Sales Pitch", description: "Turn your dreams into reality.", image: "/assets/templates/template4.png" },
+    { title: "Web Pages", description: "Good products deserve good websites.", image: "/assets/templates/template1.webp" },
+    { title: "Presentations", description: "Easily edit our animated templates.", image: "/assets/templates/template2.webp" },
+    { title: "Social Media", description: "Everything you need for socials.", image: "/assets/templates/template3.webp" },
+    { title: "Sales Pitch", description: "Turn your dreams into reality.", image: "/assets/templates/template4.webp" },
   ];
-
-  
 
   return (
     <main className="flex-1 p-8 bg-white dark:bg-[#1D1D1D] overflow-y-auto">

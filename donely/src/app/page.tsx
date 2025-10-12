@@ -20,7 +20,7 @@ export default function HomePage() {
   className="w-5 h-5 object-cover filter grayscale"
 />
 <span
-          className="font-bold bg-gradient-to-r from-[#a7a7a7] to-[#4d4c4c] bg-clip-text text-transparent dark:text-gray-700 dark:bg-none"
+          className="font-bold bg-gradient-to-r from-[#a7a7a7] to-[#4d4c4c] bg-clip-text text-transparent dark:text-white/30 dark:bg-none"
         >
           SONOLA
         </span></div>

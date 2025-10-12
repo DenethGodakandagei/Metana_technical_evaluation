@@ -31,7 +31,7 @@ export default function Banner() {
         <div className="flex flex-col gap-3 rounded-2xl shadow-md">
           <div className="mt-2">
             <Image
-              src="/assets/banner/increaseRetention.png"
+              src="/assets/banner/increaseRetention.webp"
               alt="Analytics Chart"
               width={250}
               height={100}
@@ -58,7 +58,7 @@ export default function Banner() {
           </div>
           <div className="mt-2">
             <Image
-              src="/assets/banner/collaborate.jpeg"
+              src="/assets/banner/collaborate.webp"
               alt="Analytics Chart"
               width={290}
               height={200}
@@ -70,7 +70,7 @@ export default function Banner() {
         <div className="flex flex-col gap-3">
           <div className="mt-2">
             <Image
-              src="/assets/banner/shedulepost.jpeg"
+              src="/assets/banner/shedulepost.webp"
               alt="Analytics Chart"
               width={240}
               height={100}

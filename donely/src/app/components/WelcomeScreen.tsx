@@ -22,32 +22,32 @@ export default function WelcomeScreen() {
         </div>
 
         {/* Bottom content */}
-        <div className=" text-lg lg:text-xl text-justify mb-4 backdrop-blur-md p-2">
-          <div className="text-gray-700 dark:text-[#f9f9f9] bg-white dark:bg-[#3a3838] [box-shadow:inset_0_0_1px_white] p-3 mb-3 rounded-2xl">
-          <p className="">
-            63% of marketers say creating engaging content consistently is their
-            biggest challenge.
-          </p>
-          <p className="text-sm text-gray-500 dark:text-[#f9f9f9]">
-            Content Marketing Institute, 2022
-          </p>
+        <div className=" text-lg lg:text-xl  text-justify mb-4 backdrop-blur-md p-2">
+          <div className="text-gray-700  dark:text-[#f9f9f9] bg-white dark:bg-[#3a3838] [box-shadow:inset_0_0_1px_white] p-3 mb-3 rounded-2xl w-166">
+            <p className="">
+              63% of marketers say creating engaging content consistently is their
+              biggest challenge.
+            </p>
+            <p className="text-sm text-gray-500 dark:text-[#f9f9f9]">
+              Content Marketing Institute, 2022
+            </p>
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-between   rounded-xl space-y-4 sm:space-y-0">
-          <div className="flex items-center space-x-2  justify-center sm:justify-start bg-white dark:bg-[#3a3838] [box-shadow:inset_0_0_1px_white] p-3 rounded-2xl h-16 ">
-             <div className="w-8 h-2 rounded-full bg-blue-100 dark:bg-gray-700"></div>
-            <div className="w-8 h-2 rounded-full bg-blue-100 dark:bg-gray-700"></div>
-            <div className="w-16 h-2 rounded-full bg-blue-200 dark:bg-gray-600"></div>
-            <div className="w-32 h-2 rounded-full bg-blue-300 dark:bg-blue-800"></div>
-            <div className="w-38 h-2 rounded-full bg-blue-400 dark:bg-blue-700"></div>
+            <div className="flex items-center space-x-2  justify-center sm:justify-start bg-white dark:bg-[#3a3838] [box-shadow:inset_0_0_1px_white] p-3 rounded-2xl h-16 ">
+              <div className="w-8 h-2 rounded-full bg-blue-100 dark:bg-gray-700"></div>
+              <div className="w-8 h-2 rounded-full bg-blue-100 dark:bg-gray-700"></div>
+              <div className="w-16 h-2 rounded-full bg-blue-200 dark:bg-gray-600"></div>
+              <div className="w-32 h-2 rounded-full bg-blue-300 dark:bg-blue-800"></div>
+              <div className="w-38 h-2 rounded-full bg-blue-400 dark:bg-blue-700"></div>
+            </div>
+
+            <Link href="/dashboard" className="w-full sm:w-auto flex justify-center h-16 mx-3">
+              <button className="w-40 sm:w-48 bg-blue-500 dark:bg-blue-700 text-white px-6 py-3 rounded-2xl shadow-md hover:bg-blue-500 dark:hover:bg-blue-800 transition-colors [box-shadow:inset_0_0_8px_white] dark:[box-shadow:inset_0_0_2px_white] cursor-pointer">
+                Next
+              </button>
+            </Link>
+
           </div>
-
-         <Link href="/dashboard" className="w-full sm:w-auto flex justify-center h-16 mx-3">
-  <button className="w-40 sm:w-48 bg-blue-500 dark:bg-blue-700 text-white px-6 py-3 rounded-2xl shadow-md hover:bg-blue-500 dark:hover:bg-blue-800 transition-colors [box-shadow:inset_0_0_8px_white] dark:[box-shadow:inset_0_0_2px_white] cursor-pointer">
-    Next
-  </button>
-</Link>
-
-        </div>
         </div>
       </div>
 

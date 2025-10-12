@@ -12,7 +12,7 @@ interface Badge {
 interface RecentItem {
   title: string;
   type: 'image' | 'video';
-  thumbnail: string; // image or video
+  thumbnail: string; 
   owner: string;
   date: string;
   badges: Badge[];
@@ -27,7 +27,7 @@ const recentsData: RecentItem[] = [
   {
     title: 'Creative Strategy Document',
     type: 'image',
-    thumbnail: '/assets/recents/recent1.png',
+    thumbnail: '/assets/recents/recent1.webp',
     owner: 'Mark',
     date: 'May 14, 2025',
     badges: [{ text: 'Open', color: 'bg-blue-100 text-blue-700' }],
@@ -35,7 +35,7 @@ const recentsData: RecentItem[] = [
   {
     title: 'Nature Web Design',
     type: 'image',
-    thumbnail: '/assets/recents/recent2.png',
+    thumbnail: '/assets/recents/recent2.webp',
     owner: 'Liam',
     date: 'May 14, 2025',
     badges: [{ text: 'Updating', color: 'bg-green-100 text-green-700' }],
@@ -51,7 +51,7 @@ const recentsData: RecentItem[] = [
   {
     title: 'Design Board Concept',
     type: 'image',
-    thumbnail: '/assets/recents/recent3.png',
+    thumbnail: '/assets/recents/recent3.webp',
     owner: 'Mark',
     date: 'May 14, 2025',
     badges: [

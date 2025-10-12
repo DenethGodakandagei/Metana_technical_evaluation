@@ -25,12 +25,11 @@ export default function Sidebar() {
       </nav>
       <div className="mt-auto mb-4">
         <img
-  src={`https://api.dicebear.com/9.x/avataaars/svg?seed=${Math.floor(
-    Math.random() * 1000
-  )}`}
+  src={`https://api.dicebear.com/9.x/avataaars/svg?seed=345`}
   alt="User"
   className="w-10 h-10 rounded-full border"
 />
+
 
 
       </div>
